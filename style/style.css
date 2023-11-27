@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(reset.css);
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #222;
+}
+.container{
+    background: #E9E9E9;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* .container_1{
+
+} */
+    .nav{
+        background-color: #fff;
+        height: 82px;
+    }
+        .nav_width{
+            display: flex;
+            width: 1240px;
+            height: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .nav__left{
+                display: flex;
+                height: 100%;
+                /* width: 819px; */
+                gap: 20px;
+                justify-content: space-between;
+            }
+                .nav__logo{
+                    display: flex;
+                    cursor:pointer;
+                    align-items: center;
+                    transition: transform 0.1s ease;
+                }
+                    .nav__logo img{
+                        width: 20px;
+                    }
+                    .nav__logo p{
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 10px;
+                        font-size: 22px;
+                        user-select: none;
+                    }
+                    .nav__logo:hover{
+                        transform: scale(105%);
+                    }
+                .links{
+                    /* margin-left: 86px; */
+                    list-style-type: none;
+                    font-size: 22px;
+                    
+                    display: flex;
+                    gap: 41px;
+                
+                    align-items: center;
+                }
+                    .links li a{
+                        color: black;
+                        display: flex;
+                        transition: color 0.3s ease;
+                    }
+                        .links li a:hover{
+                            color: rgb(240, 183, 12);
+                        }
+            .nav__right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                height: 100%;
+                /* padding-left: 296px; */
+            }
+                .nav__right a{
+                    color: black;
+                    font-size: 24px;       
+                    transition: color 0.1s, transform 0.2s;         
+                }
+                .nav__right a:hover{
+                    color: rgb(240, 183, 12);
+                    transform: scale(110%);
+                }
+                .nav__right iconify-icon{
+                    color: black;
+                    font-size: 24px;
+                    cursor: pointer;
+                    transition: color 0.1s, transform 0.2s;         
+                }
+                .nav__right iconify-icon:hover{
+                    color: rgb(240, 183, 12);
+                    transform: scale(112%);
+                }
+    /* Apply for a card before 2024 .... [READ] */
+    .hero_buyCard__window{
+        margin-block: 20px;       
+    }
+        .hero_buyCard__window__width{
+            width: 1240px;
+            height: 71px;
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 20px;
+            color: white;
+            background: #9B9B9B;
+            border-radius: 17px;
+        }
+            .hero_buyCard__window__width p{
+                font-size: 22px;
+                font-weight: 300;
+            }
+                .buyCard__btn{
+                    width: 98px;
+                    height: 45px;
+                    font-size: 20px;
+                    border-radius: 12px;
+                    background: #8F0000;     
+                    font-family: system-ui;
+                    text-align: center;
+
+                    display: flex;
+                    justify-content: center;   
+                    transition: background 0.2s ease;
+                }
+                    .buyCard__btn:hover{
+                        background: #000;
+                    }
+    /* A debit card .... */
+    .hero__info{
+        width: 1240px;
+        margin: 0 auto;
+        display: flex;
+
+        flex-direction: column;
+        text-align: center;
+    }
+        .hero__info__size{
+            display: flex;
+            flex-direction: column;
+        
+        }
+            .hero__info__up{
+                height: 148px;
+            }
+                .hero__info__up h1{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    height: 94px;
+
+                
+                    text-align: center;
+                    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07);
+                    font-family: Montserrat Alternates;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -3.2px;
+                }
+                .hero__info__up p{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 55px;
+
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            .hero__getFree{
+                height: 118px;
+                padding-block: 20px;
+            }
+                .getFree__btn{
+                    width: 301px;
+                    height: 81px;
+                    border-radius: 108px;
+                    background: #CB9E00;
+                    font-family: system-ui;
+                    color: white;
+                    font-size: 42px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    transition: background 0.2s;
+                    user-select: none;
+                }
+                .getFree__btn:hover{
+                    background: #000;
+                    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.07);
+                }
+        .hero__img{
+            user-select: none;
+        }
+/* _________________________ */
+/* Второй контейнер */
+
+    .menu__bar{
+        display:flex;
+        flex-direction: column; 
+        background: #333;
+    }   
+        .width{
+            display: flex;
+            flex-direction: column;
+            width: 1240px;
+            margin: 0 auto;
+            gap: 20px;
+            padding-block: 20px;
+        }
+        .menu__bar ul{
+            /* margin-block: 10px; */
+            display: flex;
+            /* margin-top: 30px; */
+            width: 100%;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+            .menu__bar ul li{
+                border-radius: 18px;
+                /* background: #CB9E00; */
+                /* padding: 10px 15px; */
+                width: 109px;
+                height: 69px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-transform: capitalize;
+                user-select: none;
+                transition: height 0.9s;
+            }
+            #btn__services{
+                z-index: 90;
+                color: white;
+                font-size: 15px;
+                font-weight: 500;
+                border-radius: 18px;
+                padding: 10px 15px;
+                width: 109px;
+                height: 69px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-transform: capitalize;
+                user-select: none;
+                transition: height 0.9s, background 0.3s, filter 0.3s;
+            }
+                #btn__services:focus{
+                    height: 90px;
+                    cursor: pointer;
+                    background: #CB9E00;
+                }
+                #btn__services:hover{
+                    background-color: #222;
+                }
+
+/* Уведомления шаблон */
+#notify{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+    .notify__width{
+        background: #494949f6;
+        height: 500px;
+        width: 900px;
+        margin: 0 auto;
+        border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        color: white;
+        font-weight: 500;
+        
+    }
+        .notify__width h1{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .notify__card{
+            height: 100%;
+            width: 100%;
+            /* margin-inline: 20px; */
+            text-align: center;
+            display: flex;
+            font-size: 34px;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 15px;
+            user-select: none;
+        }
+            .notify__card p{
+                padding-inline: 15px;
+                text-align: justify;
+                font-weight: 400;
+               
+            }
+            .send__order__btn{
+                background-color: #CB9E00;
+                width: 100%;
+                height: 100px;
+                border-radius: 30px;
+                float: end;
+                transition: filter 0.3s ease;
+            }
+                .send__order__btn:hover{
+                    filter: brightness(80%);
+                }
+        /* кнопка закрытия окна ( крестик ) */
+        .close__btn{
+    width: 100%;   
+    display: flex;
+    justify-content: flex-end;
+        }
+            .close{
+        color: rgb(53, 53, 53);
+        width: max-content;
+        cursor: pointer;
+        font-size: 24px;
+            }
+            .close:hover{
+        color: black;
+            }
+        /* ____________________________ */
+/* Все окна */
+#notify__debitCard{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__creditCard{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__credit{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__premium{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__deposits{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__investments{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__insurance{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__simCard{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__travel{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+#notify__business{
+    z-index: 99;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #0000005e;
+    align-items: center;
+}
+/* Если нажали .., то */
+.debit__card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.debit__card h1{
+    margin-top: 50px;
+}
+.debit__card p{
+    margin-bottom: 50px;
+}
+/* __________________ */
+.menu__products{
+    display: flex;
+    gap: 20px;
+}
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #ffffff31;
+        color: white;
+
+        padding: 15px 20px;
+        height: 219px;
+        width: 100%;
+
+        border-radius: 25px;
+        overflow: hidden;
+        transition: background 0.3s ,box-shadow 0.3s;
+        box-shadow: 0px 5px 6px 0px #00000024;
+    }
+    /* @keyframes background {
+        0% {
+            background-color: #ffffff31;transition: background 0.2s ease;
+        }
+        50% {
+            background: #818181;transition: background 0.2s ease;
+        }
+        100% {
+            background-color: #ffffff31;transition: background 0.2s ease;
+        }
+    } */
+        .products:hover{
+            background-color: #484848;
+            animation: background 3s infinite alternate;
+            box-shadow: 0px 5px 6px 0px #0000005e;
+        }
+            .products h1{
+                font-size: 32px;
+                font-family: sans-serif;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .products p{
+                text-align: center;
+                font-size: 20px;
+                font-family: sans-serif;
+
+                font-weight: 300;
+                /* color: #141414; */
+            }
+
+/*  Container final _________________ */
+.container__final {
+    background-color: #222;
+    height: 100%;
+    color: white;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+}
+    .container__final ul{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+        .container__final a{
+            color: #777;
+            transition: filter 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        .container__final ul a:hover{
+            filter: brightness(120%);
+        }
+        .linkFooter{
+            gap: 20px;
+            font-size: 20px;
+        }
+
+
+
+
+
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    border-radius: 20px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {display: block;}
